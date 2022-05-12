@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>miniBox by Garcia</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-theme-l1">Rob Garcia: Mini-Box</a>
+  </div>
+</div>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>Menu</b></h4>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#goal">Goal</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#planning">Planning</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#materials">Materials</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#cad">CAD</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#wiring">Wiring</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#code">Code</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#reflection">Reflection</a>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+  <div class="w3-row w3-padding-64" id="goal">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Goal</h1>
+      <p>This Useless Box was designed according to design specifications outlined in the 
+          Project Assignment page found on our classroom Canvas page.  This includes using 
+          an Arduino, a micro Servo motor, battery pack, LED power indicator, and two switches.  
+          A Useless Box is a device that accepts input from a user through the use of a switch.  
+          Once the switch is engaged, the box responds by clicking the switch back to its original 
+          position.  In order to add some personality to my project, I decided to make the box as 
+          small as possible. </p>
+    </div>
+    <div class="w3-third w3-container">
+        <img src="./box1.jpg" class="w3-border w3-padding-large w3-padding-32 w3-center" style="width:100%">
+    </div>
+  </div>
+
+  <div class="w3-row" id="planning">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Planning</h1>
+      <p>As I began planning the design of my useless box, I wanted to challenge myself by making 
+          the box as small as possible, while still containing all of the components and battery.  
+          After several iterations that included reorienting the location of the Arduino and 9V 
+          battery, I finally settled on a layout that had the Arduino installed vertically on a 
+          wall opposite from the 9V Battery and Servo Motor mount.  This allowed for enough space 
+          for the swing arm to move freely in order to make contact with the switch mounted on the 
+          top of the box.</p>
+          <p>While creating the CAD model, it was important to include all standard components 
+              that would be used during assembly.  This would ensure that after laser cutting the 
+              acrylic pieces and 3D printing the remaining custom parts everything would fit as 
+              desired.  Thankfully each of the electronic components are already available for use 
+              within our schools Onshape account.</p>
+        <p>Overall size of the mini-Box design is 87mm x 70mm x 64mm (L x W x H).</p>
+    </div>
+    <div class="w3-third w3-container">
+        <img src="./boxCad1.png" class="w3-border w3-padding-large w3-padding-32 w3-center" style="width:100%">
+    </div>
+  </div>
+
+  <div class="w3-row w3-padding-64" id="materials">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Materials</h1>
+      <p>Below is a Bill of Materials required to recreate this project.</p>
+      <table class="w3-table w3-striped w3-bordered">
+        <tr>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Quantity</th>
+        </tr>
+        <tr>
+          <td>Microcontroller</td>
+          <td>Arduino Uno</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>Prototyping Shield</td>
+          <td>Arduino shield including breadboard</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>Servo</td>
+          <td>6V Continuous Rotation micro Servo</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>Servo</td>
+          <td>6V Continuous Rotation micro Servo</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>Battery Pack</td>
+          <td>9V Battery Pack</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>Switch</td>
+          <td>Panel mount SPDT switch</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>Resistor</td>
+          <td>220 ohm</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>Wires</td>
+          <td>22 gauge, solid core</td>
+          <td>n/a</td>
+        </tr>
+        <tr>
+          <td>Arm</td>
+          <td>3D printed ABS</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>Machine screw</td>
+          <td>#4-40 Various length</td>
+          <td>7</td>
+        </tr>
+        <tr>
+          <td>Nut</td>
+          <td>#4-40</td>
+          <td>7</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="w3-row w3-padding-64" id="cad">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">CAD</h1>
+      <p><a href="https://cvilleschools.onshape.com/documents/4c0f79c9cd58be93985f017d/w/0f2cee4fd4813e9663bc33e3/e/dff40eea87eba7e69c24e840?renderMode=0&uiState=627c448a284db22aecae6370">
+          Click Here for a link to my Onshape Model</a></p>
+    </div>
+    <div class="w3-third w3-container">
+        <img src="./boxCad3.png" class="w3-border w3-padding-large w3-padding-32 w3-center" style="width:100%">
+    </div>
+  </div>
+
+  <div class="w3-row w3-padding-64" id="wiring">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Wiring</h1>
+      <div class="w3-third w3-container">
+        <img src="./boxWiring.png" class="w3-width">
+    </div>
+    </div>
+    <div class="w3-third w3-container">
+        <img src="./box3.jpg" class="w3-border w3-padding-large w3-padding-32 w3-center" style="width:100%">
+    </div>
+  </div>
+
+  <div class="w3-row w3-padding-64" id="code">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Code</h1>
+      <p>This program was written on the Arduino IDE.  The logic was fairly straightforward and 
+          included a single if else statement.  In order to control the servo motors, I needed 
+          to import the Servo.h library.  The if condition asks if the switchstate was LOW.  If 
+          this resolves as true, then the servo arm moves in order to hit the switch and change 
+          the switchstate back to HIGH.  As soon as this occurs, the else condition is satisfied 
+          and the servo arm moves back to its original position.  In addition to the servo arm 
+          commands, I also included print outs to the Serial Monitor to ensure everything was 
+          working properly.</p>
+          <iframe src=https://create.arduino.cc/editor/garciar1/87981645-5b51-45ae-b0ea-ff42ac56d7ed/preview?embed 
+          style="height:510px;width:100%;margin:10px 0" frameborder=0></iframe>
+    </div>
+  </div>
+
+  <div class="w3-row w3-padding-64" id="reflection">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Reflection</h1>
+      <p>Useless Box is the unfortunate name associated with this project.  Completing this 
+          project is anything but useless.  Through this project I gained a greater appreciation 
+          for how important it is to have a lot of detail in my CAD model.  If I didn’t try to make 
+          my model as accurate as possible I would have definitely run into issues during assembly.  
+          Thankfully I only had to cut my acrylic pieces once and everything snapped into place 
+          perfectly!</p>
+    <p>The Useless Box project is the first project for our Engineering 1 students.  It is 
+        typically the first time a student completes a full cycle of the Engineering Design
+        Process.  Although it is a cognitive leap for students to move from the design phase 
+        to the build phase, my role as teacher is to support and push students out of their 
+        comfort zone.  Successfully completing this project is a huge step for many of our 
+        students, but once they achieve this goal they are ready to take on any new challenge 
+        they may face.</p>
+    </div>
+    <div class="w3-third w3-container">
+        <img src="./box2.jpg" class="w3-border w3-padding-large w3-padding-32 w3-center" style="width:100%">
+    </div>
+  </div>
+
+  <footer id="myFooter">
+    <div class="w3-container w3-theme-l2 w3-padding-12">
+      <h4>Created by Rob Garcia at Charlottesville High School, 2022</h4>
+    </div>
+  </footer>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>
